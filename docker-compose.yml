@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+
+  app:
+    env_file:
+      - .env
+    container_name: ${APP_NAME}-ui
+    build:
+      context: .
+    entrypoint: "/usr/src/app/run/entrypoint.dev.sh"
+    command: npm run serve
+    ports:
+      - '${APP_PORT:-8081}:8081'
+      - '${APP_HMR_PORT:-3010}:3010'
+      - '${STORYBOOK_PORT:-6006}:6006'
+    volumes:
+      - '.:/usr/src/app'
+    stdin_open: true
+    tty: true

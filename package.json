@@ -1,0 +1,26 @@
+{
+  "name": "ck_template_frontend_vue_vite",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@types/postcss-preset-env": "^6.7.3",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "autoprefixer": "^10.4.2",
+    "css-blank-pseudo": "^3.0.2",
+    "cssnano": "^5.0.16",
+    "postcss": "^8.4.5",
+    "postcss-import": "^14.0.2",
+    "postcss-load-config": "^3.1.1",
+    "postcss-preset-env": "^7.2.3",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vue-tsc": "^0.29.8"
+  }
+}
